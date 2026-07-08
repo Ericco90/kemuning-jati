@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://padepokankemuningjati.com/sitemap.xml
+Sitemap: https://kijagatpamungkas.ikatanspiritualindonesia.com/sitemap.xml
