@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Padepokan Kemuning Jati - Pendampingan Spiritual, Pengobatan Tradisional, dan Sarana Spiritual Berbasis Kearifan Nusantara.">
+    <meta name="keywords" content="Spiritual Jawa, Pengobatan Tradisional, Konsultasi Kebatinan, Mustika, Keris, Pusaka Nusantara, Padepokan">
+    <meta name="author" content="Padepokan Kemuning Jati">
+    
+    <!-- Open Graph SEO -->
+    <meta property="og:title" content="Padepokan Kemuning Jati - Pelestarian Tradisi Spiritual">
+    <meta property="og:description" content="Layanan spiritual dan pengobatan tradisional dengan pendekatan budaya Nusantara secara etis dan profesional.">
+    <meta property="og:image" content="assets/img/hero-bg.png">
+    <meta property="og:url" content="https://padepokankemuningjati.com">
+    
+    <title>Padepokan Kemuning Jati | Spiritual & Pengobatan Tradisional Nusantara</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0a0a0a',
+                            darker: '#050505',
+                            gold: '#d4af37',
+                            goldhover: '#f3c746',
+                            maroon: '#5c0000',
+                            wood: '#2a1b10',
+                            light: '#e0d8c3'
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Cinzel', 'serif'],
+                        body: ['Inter', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "url('assets/img/hero-bg.png')",
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Schema JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Padepokan Kemuning Jati",
+      "image": "https://padepokankemuningjati.com/assets/img/hero-bg.png",
+      "@id": "",
+      "url": "https://padepokankemuningjati.com",
+      "telephone": "+6282148641519",
+      "description": "Pendampingan Spiritual, Pengobatan Tradisional, dan Sarana Spiritual Berbasis Kearifan Nusantara.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Kembang Kenanga No. 8",
+        "addressLocality": "Yogyakarta",
+        "postalCode": "55123",
+        "addressCountry": "ID"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "21:00"
+      } 
+    }
+    </script>
+</head>
+<body class="bg-brand-dark text-brand-light font-body antialiased overflow-x-hidden selection:bg-brand-gold selection:text-brand-dark dark">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4">
+        <div class="container mx-auto px-6 lg:px-12 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-3 font-heading text-xl md:text-2xl font-bold text-brand-gold tracking-wider glow-hover group">
+                <img src="assets/img/logo-kiri.png" alt="Logo" class="w-8 h-8 md:w-10 md:h-10 rounded-full border border-brand-gold group-hover:scale-110 transition-transform">
+                <span>Kemuning Jati</span>
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#hero" class="text-sm uppercase tracking-widest hover:text-brand-gold transition-colors duration-300">Beranda</a>
+                <a href="#tentang" class="text-sm uppercase tracking-widest hover:text-brand-gold transition-colors duration-300">Tentang</a>
+                <a href="#layanan" class="text-sm uppercase tracking-widest hover:text-brand-gold transition-colors duration-300">Layanan</a>
+                <a href="#produk" class="text-sm uppercase tracking-widest hover:text-brand-gold transition-colors duration-300">Produk</a>
+                <a href="#galeri" class="text-sm uppercase tracking-widest hover:text-brand-gold transition-colors duration-300">Galeri</a>
+                <a href="#kontak" class="border border-brand-gold text-brand-gold px-5 py-2 hover:bg-brand-gold hover:text-brand-dark transition-all duration-300 text-sm uppercase tracking-widest">Konsultasi</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-brand-gold text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-brand-darker border-t border-brand-gold/20 flex-col py-4 px-6 space-y-4 md:hidden">
+            <a href="#hero" class="mobile-link text-sm uppercase tracking-widest hover:text-brand-gold transition-colors">Beranda</a>
+            <a href="#tentang" class="mobile-link text-sm uppercase tracking-widest hover:text-brand-gold transition-colors">Tentang</a>
+            <a href="#layanan" class="mobile-link text-sm uppercase tracking-widest hover:text-brand-gold transition-colors">Layanan</a>
+            <a href="#produk" class="mobile-link text-sm uppercase tracking-widest hover:text-brand-gold transition-colors">Produk</a>
+            <a href="#galeri" class="mobile-link text-sm uppercase tracking-widest hover:text-brand-gold transition-colors">Galeri</a>
+            <a href="#kontak" class="mobile-link text-sm uppercase tracking-widest text-brand-gold font-bold">Konsultasi</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-[800px] md:min-h-screen flex items-center justify-center overflow-hidden pt-28 pb-12">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat scale-105 animate-slow-zoom" style="background-image: url('assets/img/hero-bg.png');"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-brand-dark/80 via-brand-dark/60 to-brand-dark"></div>
+            
+            <!-- Mist Animation overlay -->
+            <div class="mist-container absolute inset-0 opacity-40"></div>
+            
+            <!-- Particles -->
+            <div id="particles-js" class="absolute inset-0 opacity-50 z-10 pointer-events-none"></div>
+        </div>
+
+        <div class="container mx-auto px-2 md:px-6 relative z-20 w-full max-w-6xl flex flex-col items-center mt-4">
+            
+            <!-- TOP SECTION: Logos and Title -->
+            <div class="flex flex-row items-start justify-between w-full mb-8 md:mb-12 reveal-up">
+                <!-- Left Logo -->
+                <div class="hidden md:block w-32 h-32 flex-shrink-0 relative group rounded-full border-2 border-brand-gold shadow-[0_0_20px_rgba(212,175,55,0.6)] overflow-hidden bg-brand-dark/50 backdrop-blur-sm">
+                    <img src="assets/img/logo-kiri.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+
+                <!-- Center Titles -->
+                <div class="flex flex-col items-center text-center px-4 w-full md:w-3/5">
+                    <h3 class="text-white tracking-[0.3em] uppercase text-[10px] md:text-sm font-light mb-2">Padepokan</h3>
+                    <h1 class="font-heading text-4xl md:text-7xl font-bold uppercase text-brand-gold glow-gold-text mb-3 md:mb-4">Kemuning Jati</h1>
+                    <p class="text-brand-gold tracking-[0.2em] md:tracking-[0.3em] text-[8px] md:text-[11px] uppercase font-bold mb-4 md:mb-6">Spiritual &bull; Ilmu Hikmah &bull; Batin &bull; Ilmu Karomah</p>
+                    <p class="text-gray-300 text-[10px] md:text-xs max-w-2xl font-light uppercase tracking-widest leading-relaxed">
+                        Melayani dengan ilmu, membimbing dengan hati,<br class="hidden md:block"> menuntun menuju hidayah Ilahi
+                    </p>
+                </div>
+
+                <!-- Right Logo -->
+                <div class="hidden md:block w-32 h-32 flex-shrink-0 relative group rounded-full border-2 border-brand-gold shadow-[0_0_20px_rgba(212,175,55,0.6)] overflow-hidden bg-brand-dark/50 backdrop-blur-sm">
+                    <img src="assets/img/logo-kanan.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+            </div>
+            
+            <!-- Mobile Logos -->
+            <div class="flex md:hidden w-full justify-between px-2 mb-8 mt-[-10px] reveal-up">
+                 <div class="flex flex-col items-center w-1/3">
+                     <div class="w-14 h-14 rounded-full border border-brand-gold shadow-[0_0_10px_rgba(212,175,55,0.6)] overflow-hidden bg-brand-dark/80 backdrop-blur-sm mb-1">
+                         <img src="assets/img/logo-kiri.png" class="w-full h-full object-cover">
+                     </div>
+                     <span class="text-white text-[7px] font-bold uppercase tracking-wider text-center leading-tight">PADEPOKAN<br>KEMUNING JATI</span>
+                 </div>
+                 <div class="flex flex-col items-center w-1/3">
+                     <div class="w-14 h-14 rounded-full border border-brand-gold shadow-[0_0_10px_rgba(212,175,55,0.6)] overflow-hidden bg-brand-dark/80 backdrop-blur-sm mb-1">
+                         <img src="assets/img/logo-kanan.png" class="w-full h-full object-cover">
+                     </div>
+                     <span class="text-white text-[7px] font-bold uppercase tracking-wider text-center leading-tight">IKATAN SPIRITUAL<br>INDONESIA (ISI)</span>
+                 </div>
+            </div>
+
+            <!-- MIDDLE SECTION: Quotes and Photo -->
+            <div class="flex flex-row items-center justify-between w-full relative mb-16 md:mb-24 reveal-up delay-100">
+                <!-- Left Quote -->
+                <div class="hidden md:block w-1/4 text-center px-2">
+                    <p class="text-brand-gold font-heading text-[10px] md:text-xs lg:text-sm uppercase tracking-[0.2em] leading-loose">
+                        "Ilmu hikmah<br>bukan untuk<br>menundukkan,<br>tapi untuk<br>menyelaraskan<br>diri dengan<br>semesta."
+                    </p>
+                </div>
+
+                <!-- Center Photo -->
+                <div class="w-full md:w-1/2 flex justify-center z-10 relative px-4">
+                    <div class="w-64 h-64 md:w-[420px] md:h-[420px] relative group rounded-full border-4 border-brand-gold shadow-[0_0_40px_rgba(212,175,55,0.8)] overflow-hidden bg-brand-dark/30 backdrop-blur-sm">
+                        <img src="assets/img/foto-tengah.png" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                </div>
+
+                <!-- Right Quote -->
+                <div class="hidden md:block w-1/4 text-center px-2">
+                    <p class="text-brand-gold font-heading text-[10px] md:text-xs lg:text-sm uppercase tracking-[0.2em] leading-loose">
+                        "Sejatinya kekuatan<br>bukan pada diri,<br>tapi pada hati<br>yang tulus."
+                    </p>
+                </div>
+            </div>
+
+            <!-- BOTTOM SECTION: Names -->
+            <div class="flex flex-col items-center text-center mt-[-60px] md:mt-[-100px] z-20 reveal-up delay-200 w-full">
+                <!-- Pembina Badge -->
+                <div class="px-6 md:px-10 py-1 md:py-2 border border-brand-gold rounded-sm mb-3 md:mb-4 bg-brand-dark/90 shadow-[0_0_15px_rgba(212,175,55,0.3)]">
+                    <span class="text-brand-gold text-[10px] md:text-sm font-bold tracking-[0.3em] uppercase">Pembina</span>
+                </div>
+                
+                <!-- Name -->
+                <h2 class="font-heading text-2xl md:text-5xl lg:text-6xl font-bold uppercase text-brand-gold glow-gold-text mb-6 md:mb-8 leading-tight tracking-wider">
+                    Raden Ki Jagat Pamungkas
+                </h2>
+
+                <!-- Bottom Banner -->
+                <div class="w-full max-w-4xl border-y border-brand-gold/40 py-2 md:py-3 bg-brand-dark/60 backdrop-blur-sm">
+                    <p class="text-brand-gold text-[8px] md:text-sm uppercase tracking-[0.3em] font-semibold glow-gold-text">
+                        Jalan Cahaya, Menuntun Jiwa, Menjemput Keberkahan
+                    </p>
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 reveal-up delay-300 mt-12 md:mt-16">
+                <a href="#kontak" class="btn-primary group">
+                    <span class="relative z-10">Konsultasi Sekarang</span>
+                    <div class="btn-glow"></div>
+                </a>
+                <a href="#produk" class="btn-secondary group">
+                    <span class="relative z-10">Lihat Produk</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 animate-bounce cursor-pointer" onclick="document.getElementById('tentang').scrollIntoView({behavior: 'smooth'})">
+            <span class="block text-brand-gold text-xs tracking-widest uppercase mb-2">Scroll</span>
+            <div class="w-[1px] h-12 bg-brand-gold/50 mx-auto"></div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami Section -->
+    <section id="tentang" class="py-24 relative overflow-hidden bg-brand-dark">
+        <!-- Batik Pattern Overlay -->
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/black-scales.png')] opacity-[0.03] pointer-events-none"></div>
+        
+        <div class="container mx-auto px-6 lg:px-12 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <!-- Illustration -->
+                <div class="w-full lg:w-1/2 reveal-left">
+                    <div class="relative rounded-sm overflow-hidden border border-brand-gold/20 p-2">
+                        <div class="absolute inset-0 bg-brand-gold/5 mix-blend-overlay"></div>
+                        <img data-src="assets/img/about-illustration.png" alt="Padepokan Kemuning Jati" class="w-full h-auto object-cover rounded-sm grayscale-[20%] sepia-[20%] hover:grayscale-0 hover:sepia-0 transition-all duration-700 lazy">
+                        <!-- Corner Ornaments -->
+                        <div class="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-brand-gold/50"></div>
+                        <div class="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-brand-gold/50"></div>
+                        <div class="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-brand-gold/50"></div>
+                        <div class="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-brand-gold/50"></div>
+                    </div>
+                </div>
+                
+                <!-- Content -->
+                <div class="w-full lg:w-1/2 reveal-right">
+                    <div class="flex items-center mb-4 space-x-4">
+                        <div class="w-12 h-[1px] bg-brand-gold"></div>
+                        <h4 class="text-brand-gold uppercase tracking-widest text-sm font-semibold">Mengenal Kami</h4>
+                    </div>
+                    <h2 class="font-heading text-3xl md:text-5xl font-bold mb-6 leading-tight">Tentang Padepokan <br><span class="text-brand-gold">Kemuning Jati</span></h2>
+                    
+                    <p class="text-gray-300 mb-6 leading-relaxed font-light text-lg">
+                        Padepokan Kemuning Jati merupakan tempat pelestarian tradisi spiritual Nusantara yang menyediakan pendampingan spiritual, pengobatan tradisional, konsultasi kebatinan, serta berbagai sarana budaya dan spiritual.
+                    </p>
+                    <p class="text-gray-400 mb-8 leading-relaxed font-light">
+                        Seluruh layanan dilakukan dengan pendekatan yang menghormati nilai budaya, etika, dan kepercayaan masing-masing individu. Kami menjunjung tinggi profesionalisme tanpa meninggalkan akar kebijaksanaan para leluhur, menciptakan keseimbangan antara raga dan jiwa.
+                    </p>
+                    
+                    <div class="flex items-center space-x-6">
+                        <div class="text-center">
+                            <span class="block font-heading text-3xl text-brand-gold font-bold">15+</span>
+                            <span class="text-xs text-gray-500 uppercase tracking-wider">Tahun Pengalaman</span>
+                        </div>
+                        <div class="w-[1px] h-12 bg-gray-800"></div>
+                        <div class="text-center">
+                            <span class="block font-heading text-3xl text-brand-gold font-bold">99%</span>
+                            <span class="text-xs text-gray-500 uppercase tracking-wider">Kerahasiaan Terjamin</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan Section -->
+    <section id="layanan" class="py-24 relative bg-brand-darker">
+        <!-- Top divider -->
+        <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-brand-gold/30 to-transparent"></div>
+        
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="text-center mb-16 reveal-up">
+                <div class="flex items-center justify-center mb-4 space-x-4">
+                    <div class="w-8 h-[1px] bg-brand-gold"></div>
+                    <h4 class="text-brand-gold uppercase tracking-widest text-sm font-semibold">Dedikasi Kami</h4>
+                    <div class="w-8 h-[1px] bg-brand-gold"></div>
+                </div>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">Layanan Utama</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto font-light">Bimbingan dan penyembuhan berlandaskan metode tradisional yang telah diwariskan secara turun-temurun.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Layanan 1 -->
+                <div class="service-card group bg-brand-dark border border-gray-800 p-8 rounded-sm hover:border-brand-gold/50 transition-all duration-500 relative overflow-hidden reveal-up">
+                    <div class="absolute inset-0 bg-gradient-to-br from-brand-maroon/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="w-16 h-16 mb-6 rounded-full bg-brand-darker border border-brand-gold/30 flex items-center justify-center text-brand-gold text-2xl group-hover:scale-110 group-hover:bg-brand-gold group-hover:text-brand-dark transition-all duration-500 shadow-[0_0_15px_rgba(212,175,55,0.1)] group-hover:shadow-[0_0_20px_rgba(212,175,55,0.4)]">
+                        <i class="fa-solid fa-hands-holding-circle"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-3 text-white group-hover:text-brand-gold transition-colors">Pendampingan Spiritual</h3>
+                    <p class="text-gray-400 font-light text-sm leading-relaxed">Bimbingan khusus untuk mencapai ketenangan batin, penyelesaian masalah hidup, dan peningkatan kesadaran spiritual secara etis.</p>
+                </div>
+                
+                <!-- Layanan 2 -->
+                <div class="service-card group bg-brand-dark border border-gray-800 p-8 rounded-sm hover:border-brand-gold/50 transition-all duration-500 relative overflow-hidden reveal-up delay-100">
+                    <div class="absolute inset-0 bg-gradient-to-br from-brand-maroon/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="w-16 h-16 mb-6 rounded-full bg-brand-darker border border-brand-gold/30 flex items-center justify-center text-brand-gold text-2xl group-hover:scale-110 group-hover:bg-brand-gold group-hover:text-brand-dark transition-all duration-500 shadow-[0_0_15px_rgba(212,175,55,0.1)] group-hover:shadow-[0_0_20px_rgba(212,175,55,0.4)]">
+                        <i class="fa-solid fa-mortar-pestle"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-3 text-white group-hover:text-brand-gold transition-colors">Pengobatan Tradisional</h3>
+                    <p class="text-gray-400 font-light text-sm leading-relaxed">Terapi penyembuhan holistik fisik maupun non-fisik menggunakan ramuan herbal alami dan metode transfer energi Nusantara.</p>
+                </div>
+                
+                <!-- Layanan 3 -->
+                <div class="service-card group bg-brand-dark border border-gray-800 p-8 rounded-sm hover:border-brand-gold/50 transition-all duration-500 relative overflow-hidden reveal-up delay-200">
+                    <div class="absolute inset-0 bg-gradient-to-br from-brand-maroon/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="w-16 h-16 mb-6 rounded-full bg-brand-darker border border-brand-gold/30 flex items-center justify-center text-brand-gold text-2xl group-hover:scale-110 group-hover:bg-brand-gold group-hover:text-brand-dark transition-all duration-500 shadow-[0_0_15px_rgba(212,175,55,0.1)] group-hover:shadow-[0_0_20px_rgba(212,175,55,0.4)]">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-3 text-white group-hover:text-brand-gold transition-colors">Konsultasi Spiritual</h3>
+                    <p class="text-gray-400 font-light text-sm leading-relaxed">Layanan tanya jawab dan pembacaan energi untuk membantu Anda mengambil keputusan penting dalam karier, asmara, maupun usaha.</p>
+                </div>
+
+                <!-- Layanan 4 -->
+                <div class="service-card group bg-brand-dark border border-gray-800 p-8 rounded-sm hover:border-brand-gold/50 transition-all duration-500 relative overflow-hidden reveal-up">
+                    <div class="absolute inset-0 bg-gradient-to-br from-brand-maroon/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="w-16 h-16 mb-6 rounded-full bg-brand-darker border border-brand-gold/30 flex items-center justify-center text-brand-gold text-2xl group-hover:scale-110 group-hover:bg-brand-gold group-hover:text-brand-dark transition-all duration-500 shadow-[0_0_15px_rgba(212,175,55,0.1)] group-hover:shadow-[0_0_20px_rgba(212,175,55,0.4)]">
+                        <i class="fa-solid fa-om"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-3 text-white group-hover:text-brand-gold transition-colors">Ritual Doa dan Tirakat</h3>
+                    <p class="text-gray-400 font-light text-sm leading-relaxed">Fasilitasi kegiatan laku tirakat, selamatan, dan doa bersama khusus untuk hajat tertentu dengan tata cara budaya Jawa yang sakral.</p>
+                </div>
+
+                <!-- Layanan 5 -->
+                <div class="service-card group bg-brand-dark border border-gray-800 p-8 rounded-sm hover:border-brand-gold/50 transition-all duration-500 relative overflow-hidden reveal-up delay-100 lg:col-span-2">
+                    <div class="absolute inset-0 bg-gradient-to-br from-brand-maroon/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="w-16 h-16 mb-6 rounded-full bg-brand-darker border border-brand-gold/30 flex items-center justify-center text-brand-gold text-2xl group-hover:scale-110 group-hover:bg-brand-gold group-hover:text-brand-dark transition-all duration-500 shadow-[0_0_15px_rgba(212,175,55,0.1)] group-hover:shadow-[0_0_20px_rgba(212,175,55,0.4)]">
+                        <i class="fa-solid fa-scroll"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-3 text-white group-hover:text-brand-gold transition-colors">Pelestarian Budaya Spiritual</h3>
+                    <p class="text-gray-400 font-light text-sm leading-relaxed max-w-xl">Edukasi, workshop, dan penyediaan sarana budaya seperti perawatan pusaka, jamasan keris, serta pembelajaran filosofi nilai luhur ajaran spiritual Nusantara bagi generasi modern.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan Section -->
+    <section class="py-20 bg-brand-dark relative">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center reveal-up">
+                <div class="p-4 hover:-translate-y-2 transition-transform duration-300">
+                    <i class="fa-solid fa-face-smile text-3xl text-brand-gold mb-3"></i>
+                    <h5 class="text-sm font-semibold text-gray-300">Konsultasi Ramah</h5>
+                </div>
+                <div class="p-4 hover:-translate-y-2 transition-transform duration-300">
+                    <i class="fa-solid fa-user-secret text-3xl text-brand-gold mb-3"></i>
+                    <h5 class="text-sm font-semibold text-gray-300">Menjaga Kerahasiaan</h5>
+                </div>
+                <div class="p-4 hover:-translate-y-2 transition-transform duration-300">
+                    <i class="fa-solid fa-seedling text-3xl text-brand-gold mb-3"></i>
+                    <h5 class="text-sm font-semibold text-gray-300">Pendekatan Budaya</h5>
+                </div>
+                <div class="p-4 hover:-translate-y-2 transition-transform duration-300">
+                    <i class="fa-solid fa-user-tie text-3xl text-brand-gold mb-3"></i>
+                    <h5 class="text-sm font-semibold text-gray-300">Profesional</h5>
+                </div>
+                <div class="p-4 hover:-translate-y-2 transition-transform duration-300">
+                    <i class="fa-solid fa-bolt text-3xl text-brand-gold mb-3"></i>
+                    <h5 class="text-sm font-semibold text-gray-300">Respon Cepat</h5>
+                </div>
+                <div class="p-4 hover:-translate-y-2 transition-transform duration-300">
+                    <i class="fa-solid fa-shield-halved text-3xl text-brand-gold mb-3"></i>
+                    <h5 class="text-sm font-semibold text-gray-300">Aman & Nyaman</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produk Section -->
+    <section id="produk" class="py-24 relative bg-brand-wood/20">
+        <!-- Overlay Texture -->
+        <div class="absolute inset-0 bg-brand-dark/95 z-0"></div>
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/wood-pattern.png')] opacity-10 mix-blend-overlay z-0 pointer-events-none"></div>
+        
+        <div class="container mx-auto px-6 lg:px-12 relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 reveal-up">
+                <div class="max-w-2xl mb-6 md:mb-0">
+                    <div class="flex items-center mb-4 space-x-4">
+                        <div class="w-8 h-[1px] bg-brand-gold"></div>
+                        <h4 class="text-brand-gold uppercase tracking-widest text-sm font-semibold">Koleksi Eksklusif</h4>
+                    </div>
+                    <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">Produk Pilihan</h2>
+                    <p class="text-gray-400 font-light">Sarana spiritual dan mahakarya budaya Nusantara yang telah dirawat serta diselaraskan energinya. Cocok untuk kolektor dan pecinta kearifan lokal.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Produk 1 -->
+                <div class="product-card bg-brand-darker rounded-sm overflow-hidden border border-gray-800 group hover:border-brand-gold/50 transition-all duration-500 reveal-up">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="absolute inset-0 bg-brand-dark/20 group-hover:bg-transparent transition-colors z-10"></div>
+                        <img data-src="assets/img/product-mustika.png" alt="Batu Mustika Alam" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 lazy">
+                        <div class="absolute top-4 right-4 bg-brand-dark/80 backdrop-blur-sm border border-brand-gold/50 text-brand-gold text-xs px-3 py-1 rounded-sm z-20">Mustika</div>
+                    </div>
+                    <div class="p-6 relative">
+                        <h3 class="font-heading text-lg font-bold text-white mb-2 group-hover:text-brand-gold transition-colors">Mustika Alam Bertuah</h3>
+                        <p class="text-gray-400 text-sm font-light mb-6 line-clamp-2">Batu alam murni hasil tarikan gaib, dirawat secara khusus untuk menjaga kemurnian energinya.</p>
+                        
+                        <div class="flex flex-col space-y-3">
+                            <a href="assets/img/product-mustika.png" class="modal-trigger w-full text-center text-sm border border-gray-700 py-2 text-gray-300 hover:border-brand-gold hover:text-brand-gold transition-colors uppercase tracking-wider font-semibold" data-type="product" data-title="Mustika Alam Bertuah" data-desc="Batu alam murni hasil tarikan gaib, dirawat secara khusus untuk menjaga kemurnian energinya. Energinya dipercaya mampu membawa keberuntungan, pengasihan, dan perlindungan bagi pemiliknya.">Detail</a>
+                            <a href="https://wa.me/6282148641519" target="_blank" class="w-full text-center text-sm bg-brand-gold text-brand-dark py-2 hover:bg-brand-goldhover transition-colors uppercase tracking-wider font-bold"><i class="fab fa-whatsapp mr-2"></i>Pesan</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produk 2 -->
+                <div class="product-card bg-brand-darker rounded-sm overflow-hidden border border-gray-800 group hover:border-brand-gold/50 transition-all duration-500 reveal-up delay-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="absolute inset-0 bg-brand-dark/20 group-hover:bg-transparent transition-colors z-10"></div>
+                        <img data-src="assets/img/product-keris.png" alt="Keris Pusaka" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 lazy">
+                        <div class="absolute top-4 right-4 bg-brand-dark/80 backdrop-blur-sm border border-brand-gold/50 text-brand-gold text-xs px-3 py-1 rounded-sm z-20">Keris Koleksi</div>
+                    </div>
+                    <div class="p-6 relative">
+                        <h3 class="font-heading text-lg font-bold text-white mb-2 group-hover:text-brand-gold transition-colors">Keris Pusaka Sepuh</h3>
+                        <p class="text-gray-400 text-sm font-light mb-6 line-clamp-2">Mahakarya empu nusantara dengan pamor indah, bernilai seni tinggi dan filosofi mendalam.</p>
+                        
+                        <div class="flex flex-col space-y-3">
+                            <a href="assets/img/product-keris.png" class="modal-trigger w-full text-center text-sm border border-gray-700 py-2 text-gray-300 hover:border-brand-gold hover:text-brand-gold transition-colors uppercase tracking-wider font-semibold" data-type="product" data-title="Keris Pusaka Sepuh" data-desc="Mahakarya empu nusantara dengan pamor indah, bernilai seni tinggi dan filosofi mendalam. Memancarkan kharisma dan wibawa tingkat tinggi bagi siapapun yang merawatnya dengan ikhlas.">Detail</a>
+                            <a href="https://wa.me/6282148641519" target="_blank" class="w-full text-center text-sm bg-brand-gold text-brand-dark py-2 hover:bg-brand-goldhover transition-colors uppercase tracking-wider font-bold"><i class="fab fa-whatsapp mr-2"></i>Pesan</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produk 3 (Generic) -->
+                <div class="product-card bg-brand-darker rounded-sm overflow-hidden border border-gray-800 group hover:border-brand-gold/50 transition-all duration-500 reveal-up delay-200">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="absolute inset-0 bg-brand-dark/40 group-hover:bg-transparent transition-colors z-10"></div>
+                        <img data-src="https://images.unsplash.com/photo-1610485640103-f366daecf8c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Kayu Bertuah" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 lazy grayscale-[30%]">
+                        <div class="absolute top-4 right-4 bg-brand-dark/80 backdrop-blur-sm border border-brand-gold/50 text-brand-gold text-xs px-3 py-1 rounded-sm z-20">Kayu Bertuah</div>
+                    </div>
+                    <div class="p-6 relative">
+                        <h3 class="font-heading text-lg font-bold text-white mb-2 group-hover:text-brand-gold transition-colors">Gelang Kayu Stigi</h3>
+                        <p class="text-gray-400 text-sm font-light mb-6 line-clamp-2">Aksesoris spiritual dari kayu stigi asli yang dipercaya memancarkan energi penetralisir negatif.</p>
+                        
+                        <div class="flex flex-col space-y-3">
+                            <a href="https://images.unsplash.com/photo-1610485640103-f366daecf8c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="modal-trigger w-full text-center text-sm border border-gray-700 py-2 text-gray-300 hover:border-brand-gold hover:text-brand-gold transition-colors uppercase tracking-wider font-semibold" data-type="product" data-title="Gelang Kayu Stigi" data-desc="Aksesoris spiritual dari kayu stigi asli yang dipercaya memancarkan energi penetralisir negatif. Sangat cocok digunakan untuk meditasi, menenangkan pikiran, maupun aktivitas sehari-hari.">Detail</a>
+                            <a href="https://wa.me/6282148641519" target="_blank" class="w-full text-center text-sm bg-brand-gold text-brand-dark py-2 hover:bg-brand-goldhover transition-colors uppercase tracking-wider font-bold"><i class="fab fa-whatsapp mr-2"></i>Pesan</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produk 4 (Generic) -->
+                <div class="product-card bg-brand-darker rounded-sm overflow-hidden border border-gray-800 group hover:border-brand-gold/50 transition-all duration-500 reveal-up delay-300">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="absolute inset-0 bg-brand-dark/40 group-hover:bg-transparent transition-colors z-10"></div>
+                        <img data-src="https://images.unsplash.com/photo-1608938221840-0255c46462bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Minyak Tradisional" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 lazy grayscale-[30%]">
+                        <div class="absolute top-4 right-4 bg-brand-dark/80 backdrop-blur-sm border border-brand-gold/50 text-brand-gold text-xs px-3 py-1 rounded-sm z-20">Minyak</div>
+                    </div>
+                    <div class="p-6 relative">
+                        <h3 class="font-heading text-lg font-bold text-white mb-2 group-hover:text-brand-gold transition-colors">Minyak Perawatan Pusaka</h3>
+                        <p class="text-gray-400 text-sm font-light mb-6 line-clamp-2">Racikan khusus minyak cendana dan melati murni untuk merawat tosan aji dan pusaka tradisi.</p>
+                        
+                        <div class="flex flex-col space-y-3">
+                            <a href="https://images.unsplash.com/photo-1608938221840-0255c46462bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="modal-trigger w-full text-center text-sm border border-gray-700 py-2 text-gray-300 hover:border-brand-gold hover:text-brand-gold transition-colors uppercase tracking-wider font-semibold" data-type="product" data-title="Minyak Perawatan Pusaka" data-desc="Racikan khusus minyak cendana dan melati murni untuk merawat tosan aji dan pusaka tradisi. Menjaga kualitas besi sekaligus mempertahankan energi spiritual yang terkandung di dalamnya.">Detail</a>
+                            <a href="https://wa.me/6282148641519" target="_blank" class="w-full text-center text-sm bg-brand-gold text-brand-dark py-2 hover:bg-brand-goldhover transition-colors uppercase tracking-wider font-bold"><i class="fab fa-whatsapp mr-2"></i>Pesan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12 reveal-up">
+                <a href="#" class="inline-block text-brand-gold hover:text-white transition-colors border-b border-brand-gold pb-1 font-heading tracking-widest text-sm">Lihat Semua Koleksi <i class="fas fa-arrow-right ml-2"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri Section (Masonry) -->
+    <section id="galeri" class="py-24 bg-brand-darker relative">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="text-center mb-16 reveal-up">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">Galeri Padepokan</h2>
+                <div class="w-16 h-[1px] bg-brand-gold mx-auto"></div>
+            </div>
+            
+            <!-- CSS Columns Masonry -->
+            <div class="columns-1 md:columns-2 lg:columns-4 gap-4 space-y-4">
+                
+                <div class="relative group cursor-pointer overflow-hidden rounded-sm break-inside-avoid gallery-item modal-trigger" data-type="gallery" data-src="https://images.unsplash.com/photo-1599839619722-39751411ea63?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" data-title="Ruang Konsultasi Padepokan" data-desc="Suasana ruang konsultasi yang tenang, nyaman, dan kental dengan nuansa budaya. Di tempat ini kami membimbing setiap tamu yang datang mencari solusi spiritual maupun pencerahan hidup.">
+                    <div class="absolute inset-0 bg-brand-dark/50 group-hover:bg-brand-dark/10 transition-colors z-10 duration-500"></div>
+                    <img src="https://images.unsplash.com/photo-1599839619722-39751411ea63?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Ruang Konsultasi" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700 grayscale-[40%]">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20">
+                        <i class="fas fa-search-plus text-brand-gold text-3xl drop-shadow-lg"></i>
+                    </div>
+                </div>
+
+                <div class="relative group cursor-pointer overflow-hidden rounded-sm break-inside-avoid gallery-item modal-trigger" data-type="gallery" data-src="assets/img/hero-bg.png" data-title="Suasana Spiritual Malam" data-desc="Momen hening pada malam hari yang biasa digunakan untuk bermeditasi, memfokuskan energi, dan menyelaraskan batin dengan alam semesta.">
+                    <div class="absolute inset-0 bg-brand-dark/50 group-hover:bg-brand-dark/10 transition-colors z-10 duration-500"></div>
+                    <img src="assets/img/hero-bg.png" alt="Suasana Malam" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700 grayscale-[20%]">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20">
+                        <i class="fas fa-search-plus text-brand-gold text-3xl drop-shadow-lg"></i>
+                    </div>
+                </div>
+                
+                <div class="relative group cursor-pointer overflow-hidden rounded-sm break-inside-avoid gallery-item modal-trigger" data-type="gallery" data-src="https://images.unsplash.com/photo-1582046429994-39f50e7b416f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" data-title="Sarana Meditasi" data-desc="Penggunaan lilin dan dupa sebagai sarana aromaterapi yang membantu mempercepat proses relaksasi raga dan menenangkan gejolak emosi saat sesi pendampingan berlangsung.">
+                    <div class="absolute inset-0 bg-brand-dark/50 group-hover:bg-brand-dark/10 transition-colors z-10 duration-500"></div>
+                    <img src="https://images.unsplash.com/photo-1582046429994-39f50e7b416f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Lilin dan Dupa" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700 grayscale-[40%]">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20">
+                        <i class="fas fa-search-plus text-brand-gold text-3xl drop-shadow-lg"></i>
+                    </div>
+                </div>
+                
+                <div class="relative group cursor-pointer overflow-hidden rounded-sm break-inside-avoid gallery-item modal-trigger" data-type="gallery" data-src="assets/img/about-illustration.png" data-title="Area Pendopo Depan" data-desc="Tampak depan area Padepokan Kemuning Jati dengan arsitektur klasik Jawa yang sarat akan makna filosofis. Tempat bersilaturahmi dan memupuk rasa persaudaraan.">
+                    <div class="absolute inset-0 bg-brand-dark/50 group-hover:bg-brand-dark/10 transition-colors z-10 duration-500"></div>
+                    <img src="assets/img/about-illustration.png" alt="Pendopo" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700 grayscale-[40%]">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20">
+                        <i class="fas fa-search-plus text-brand-gold text-3xl drop-shadow-lg"></i>
+                    </div>
+                </div>
+
+                <div class="relative group cursor-pointer overflow-hidden rounded-sm break-inside-avoid gallery-item modal-trigger" data-type="gallery" data-src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" data-title="Pelestarian Ornamen Budaya" data-desc="Berbagai macam ornamen dan kerajinan tangan Nusantara dirawat dengan baik. Kami meyakini bahwa menghargai keindahan seni leluhur adalah bagian dari olah rasa.">
+                    <div class="absolute inset-0 bg-brand-dark/50 group-hover:bg-brand-dark/10 transition-colors z-10 duration-500"></div>
+                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Ornamen Jawa" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700 grayscale-[50%]">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20">
+                        <i class="fas fa-search-plus text-brand-gold text-3xl drop-shadow-lg"></i>
+                    </div>
+                </div>
+
+                 <div class="relative group cursor-pointer overflow-hidden rounded-sm break-inside-avoid gallery-item modal-trigger" data-type="gallery" data-src="assets/img/product-keris.png" data-title="Koleksi Pusaka Pilihan" data-desc="Perawatan pusaka koleksi padepokan secara rutin untuk menjaga pamor besi tua sekaligus melestarikan peninggalan mahakarya empu nusantara masa lampau.">
+                    <div class="absolute inset-0 bg-brand-dark/50 group-hover:bg-brand-dark/10 transition-colors z-10 duration-500"></div>
+                    <img src="assets/img/product-keris.png" alt="Pusaka Koleksi" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700 grayscale-[10%]">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20">
+                        <i class="fas fa-search-plus text-brand-gold text-3xl drop-shadow-lg"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni Section -->
+    <section class="py-24 bg-brand-dark relative overflow-hidden">
+        <div class="absolute right-0 top-0 w-1/3 h-full bg-brand-maroon/5 blur-[100px] pointer-events-none"></div>
+        
+        <div class="container mx-auto px-6 lg:px-12 relative z-10">
+            <div class="text-center mb-16 reveal-up">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">Pengalaman Mereka</h2>
+                <div class="w-16 h-[1px] bg-brand-gold mx-auto"></div>
+            </div>
+
+            <!-- Custom Slider Wrapper -->
+            <div class="relative max-w-4xl mx-auto testimonial-slider-container overflow-hidden rounded-lg reveal-up">
+                
+                <div class="testimonial-track flex transition-transform duration-700 ease-in-out" id="testimonial-track">
+                    <!-- Javascript will populate this based on data -->
+                </div>
+                
+                <!-- Controls -->
+                <div class="flex justify-center mt-8 space-x-3" id="testimonial-dots">
+                    <!-- Dots -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 bg-brand-darker relative border-t border-gray-900">
+        <div class="container mx-auto px-6 lg:px-12 max-w-4xl">
+            <div class="text-center mb-16 reveal-up">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">Pertanyaan Umum</h2>
+                <div class="w-16 h-[1px] bg-brand-gold mx-auto"></div>
+            </div>
+
+            <div class="space-y-4" id="faq-accordion">
+                <!-- FAQ Items generated via JS for brevity, or hardcoded here -->
+                <!-- Item 1 -->
+                <div class="border border-gray-800 rounded-sm bg-brand-dark overflow-hidden reveal-up">
+                    <button class="faq-btn w-full text-left px-6 py-4 flex justify-between items-center focus:outline-none group">
+                        <span class="font-heading text-lg font-semibold text-gray-300 group-hover:text-brand-gold transition-colors">Apakah layanan ini menggunakan metode klenik/ilmu hitam?</span>
+                        <i class="fas fa-chevron-down text-brand-gold transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-4 hidden text-gray-400 font-light text-sm leading-relaxed">
+                        Sama sekali tidak. Kami menggunakan pendekatan spiritual putih, doa kepada Tuhan YME, serta metode penyembuhan tradisional berbasis energi alam dan kearifan leluhur Nusantara yang menjunjung etika agama.
+                    </div>
+                </div>
+                
+                <div class="border border-gray-800 rounded-sm bg-brand-dark overflow-hidden reveal-up delay-100">
+                    <button class="faq-btn w-full text-left px-6 py-4 flex justify-between items-center focus:outline-none group">
+                        <span class="font-heading text-lg font-semibold text-gray-300 group-hover:text-brand-gold transition-colors">Bagaimana prosedur konsultasinya?</span>
+                        <i class="fas fa-chevron-down text-brand-gold transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-4 hidden text-gray-400 font-light text-sm leading-relaxed">
+                        Anda dapat menghubungi kami via WhatsApp untuk menjadwalkan sesi. Konsultasi dapat dilakukan secara langsung di Padepokan maupun jarak jauh via telepon/video call tanpa mengurangi kualitas layanan.
+                    </div>
+                </div>
+
+                <div class="border border-gray-800 rounded-sm bg-brand-dark overflow-hidden reveal-up delay-200">
+                    <button class="faq-btn w-full text-left px-6 py-4 flex justify-between items-center focus:outline-none group">
+                        <span class="font-heading text-lg font-semibold text-gray-300 group-hover:text-brand-gold transition-colors">Apakah hasil penyembuhan/ritual dijamin berhasil?</span>
+                        <i class="fas fa-chevron-down text-brand-gold transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-4 hidden text-gray-400 font-light text-sm leading-relaxed">
+                        Kami sebagai manusia hanya berikhtiar (berusaha) maksimal menggunakan ilmu dan metode yang ada. Kesembuhan dan keberhasilan sejati mutlak milik Tuhan YME. Kami tidak memberikan klaim atau janji palsu yang mendahului kehendak-Nya.
+                    </div>
+                </div>
+
+                <div class="border border-gray-800 rounded-sm bg-brand-dark overflow-hidden reveal-up delay-300">
+                    <button class="faq-btn w-full text-left px-6 py-4 flex justify-between items-center focus:outline-none group">
+                        <span class="font-heading text-lg font-semibold text-gray-300 group-hover:text-brand-gold transition-colors">Apakah produk mustika dan pusaka aman disimpan di rumah?</span>
+                        <i class="fas fa-chevron-down text-brand-gold transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-4 hidden text-gray-400 font-light text-sm leading-relaxed">
+                        Sangat aman. Seluruh pusaka dan mustika koleksi kami telah diselaraskan energinya sehingga hanya memancarkan aura positif. Benda tersebut difungsikan sebagai sarana, bukan sebagai objek sesembahan.
+                    </div>
+                </div>
+
+                <!-- Add more FAQ up to 10 as requested in JS logic or just copy structure -->
+                <div class="border border-gray-800 rounded-sm bg-brand-dark overflow-hidden reveal-up">
+                    <button class="faq-btn w-full text-left px-6 py-4 flex justify-between items-center focus:outline-none group">
+                        <span class="font-heading text-lg font-semibold text-gray-300 group-hover:text-brand-gold transition-colors">Apakah layanan terbuka untuk semua agama?</span>
+                        <i class="fas fa-chevron-down text-brand-gold transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-4 hidden text-gray-400 font-light text-sm leading-relaxed">
+                        Ya, kami melayani semua kalangan tanpa memandang latar belakang suku, agama, dan ras. Metode kami mengutamakan nilai universal dan budaya Nusantara yang menghargai keberagaman.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-8">
+                <p class="text-gray-500 text-sm font-light">Masih ada pertanyaan? <a href="#kontak" class="text-brand-gold hover:underline">Hubungi Kami</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="kontak" class="py-24 relative overflow-hidden bg-brand-dark">
+        <!-- Glow effects -->
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-gold/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/black-scales.png')] opacity-[0.05] pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 relative z-10 text-center reveal-up">
+            <div class="border border-brand-gold/30 p-12 md:p-20 max-w-4xl mx-auto rounded-sm backdrop-blur-sm bg-brand-darker/50 relative overflow-hidden group hover:border-brand-gold/60 transition-colors duration-700">
+                <!-- Corner Ornaments -->
+                <div class="absolute top-4 left-4 w-6 h-6 border-t border-l border-brand-gold/50 group-hover:w-12 group-hover:h-12 transition-all duration-500"></div>
+                <div class="absolute top-4 right-4 w-6 h-6 border-t border-r border-brand-gold/50 group-hover:w-12 group-hover:h-12 transition-all duration-500"></div>
+                <div class="absolute bottom-4 left-4 w-6 h-6 border-b border-l border-brand-gold/50 group-hover:w-12 group-hover:h-12 transition-all duration-500"></div>
+                <div class="absolute bottom-4 right-4 w-6 h-6 border-b border-r border-brand-gold/50 group-hover:w-12 group-hover:h-12 transition-all duration-500"></div>
+
+                <h2 class="font-heading text-3xl md:text-5xl font-bold mb-6 text-white glow-gold-text">Konsultasikan Kebutuhan Anda</h2>
+                <p class="text-gray-400 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                    Setiap masalah memiliki jalan keluar. Temukan kedamaian dan solusi terbaik dengan pendampingan profesional dari kami. Privasi Anda adalah prioritas utama kami.
+                </p>
+                <a href="https://wa.me/6282148641519" target="_blank" class="inline-flex items-center justify-center bg-brand-gold text-brand-dark px-10 py-4 font-bold uppercase tracking-widest text-sm hover:bg-brand-goldhover hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(212,175,55,0.3)]">
+                    <i class="fab fa-whatsapp text-xl mr-3"></i> Chat via WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#050505] border-t border-gray-900 pt-20 pb-10 relative">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                
+                <!-- Brand -->
+                <div class="lg:col-span-1">
+                    <a href="#" class="flex items-center space-x-3 font-heading text-2xl font-bold text-brand-gold tracking-wider mb-6 w-fit group">
+                        <img src="assets/img/logo-kiri.png" alt="Logo" class="w-10 h-10 rounded-full border border-brand-gold group-hover:scale-110 transition-transform">
+                        <span>Kemuning Jati</span>
+                    </a>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6 font-light">
+                        Melestarikan kearifan Nusantara melalui pengobatan tradisional dan pendampingan spiritual yang etis dan profesional.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center text-gray-400 hover:text-brand-gold hover:border-brand-gold transition-all duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center text-gray-400 hover:text-brand-gold hover:border-brand-gold transition-all duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center text-gray-400 hover:text-brand-gold hover:border-brand-gold transition-all duration-300"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Menu -->
+                <div>
+                    <h4 class="text-white font-heading font-semibold mb-6 uppercase tracking-widest text-sm">Tautan Cepat</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#hero" class="text-gray-500 hover:text-brand-gold text-sm transition-colors">Beranda</a></li>
+                        <li><a href="#tentang" class="text-gray-500 hover:text-brand-gold text-sm transition-colors">Tentang Kami</a></li>
+                        <li><a href="#layanan" class="text-gray-500 hover:text-brand-gold text-sm transition-colors">Layanan Utama</a></li>
+                        <li><a href="#produk" class="text-gray-500 hover:text-brand-gold text-sm transition-colors">Koleksi Produk</a></li>
+                        <li><a href="#galeri" class="text-gray-500 hover:text-brand-gold text-sm transition-colors">Galeri</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kontak -->
+                <div>
+                    <h4 class="text-white font-heading font-semibold mb-6 uppercase tracking-widest text-sm">Informasi Kontak</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-brand-gold mt-1 mr-3"></i>
+                            <span class="text-gray-500 text-sm font-light">Jl. Kembang Kenanga No. 8, <br>Yogyakarta, Indonesia</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-brand-gold mr-3"></i>
+                            <span class="text-gray-500 text-sm font-light">+62 812-3456-7890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-brand-gold mr-3"></i>
+                            <span class="text-gray-500 text-sm font-light">info@padepokankemuningjati.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock text-brand-gold mr-3"></i>
+                            <span class="text-gray-500 text-sm font-light">Senin - Sabtu: 09:00 - 21:00</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Maps -->
+                <div>
+                    <h4 class="text-white font-heading font-semibold mb-6 uppercase tracking-widest text-sm">Lokasi</h4>
+                    <div class="h-32 bg-gray-900 rounded-sm border border-gray-800 overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+                        <!-- Embed dummy maps iframe -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126487.8967060378!2d110.3204781700938!3d-7.797068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5787bd5edfcb%3A0x1879cbc4b6544976!2sYogyakarta%2C%20Kota%20Yogyakarta%2C%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-600 text-sm mb-4 md:mb-0">
+                    &copy; 2026 Padepokan Kemuning Jati. Hak Cipta Dilindungi.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-brand-gold text-xs uppercase tracking-widest transition-colors">Kebijakan Privasi</a>
+                    <a href="#" class="text-gray-600 hover:text-brand-gold text-xs uppercase tracking-widest transition-colors">Syarat Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/6282148641519" target="_blank" class="fixed bottom-6 left-6 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-[0_4px_15px_rgba(37,211,102,0.4)] z-40 hover:scale-110 transition-transform duration-300">
+        <i class="fab fa-whatsapp"></i>
+        <span class="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] w-5 h-5 rounded-full flex items-center justify-center font-bold animate-bounce">1</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-brand-dark border border-brand-gold text-brand-gold w-12 h-12 rounded-sm flex items-center justify-center z-40 opacity-0 translate-y-10 transition-all duration-500 hover:bg-brand-gold hover:text-brand-dark">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Modal / Lightbox -->
+    <div id="lightbox" class="fixed inset-0 z-[100] bg-brand-dark/95 backdrop-blur-md hidden flex items-center justify-center opacity-0 transition-opacity duration-300 p-4 md:p-8">
+        <button id="lightbox-close" class="absolute top-6 right-6 md:top-8 md:right-10 text-brand-gold text-3xl md:text-4xl hover:text-white transition-colors focus:outline-none z-50">
+            <i class="fas fa-times"></i>
+        </button>
+        
+        <div class="relative w-full max-w-5xl bg-brand-darker border border-brand-gold/30 rounded-sm shadow-[0_0_40px_rgba(0,0,0,0.8)] overflow-hidden flex flex-col md:flex-row max-h-[90vh]">
+            <!-- Image Section -->
+            <div class="w-full md:w-3/5 bg-black flex items-center justify-center p-2 md:p-4">
+                <img id="lightbox-img" src="" alt="Enlarged" class="max-w-full max-h-[40vh] md:max-h-[85vh] object-contain">
+            </div>
+            
+            <!-- Content Section -->
+            <div class="w-full md:w-2/5 p-6 md:p-10 flex flex-col justify-center overflow-y-auto">
+                <div class="w-12 h-[1px] bg-brand-gold mb-4"></div>
+                <h3 id="lightbox-title" class="font-heading text-2xl md:text-4xl text-brand-gold font-bold mb-4 leading-tight">Judul</h3>
+                <p id="lightbox-desc" class="text-gray-300 font-light text-sm md:text-base leading-relaxed mb-8">Deskripsi akan muncul di sini.</p>
+                
+                <!-- CTA inside modal -->
+                <a id="lightbox-cta" href="https://wa.me/6282148641519" target="_blank" class="inline-flex items-center justify-center border border-brand-gold text-brand-gold hover:bg-brand-gold hover:text-brand-dark px-6 py-3 font-bold uppercase tracking-widest text-xs transition-colors w-fit">
+                    <i class="fab fa-whatsapp mr-2 text-lg"></i> Hubungi Kami
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
