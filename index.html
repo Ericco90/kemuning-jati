@@ -141,7 +141,7 @@
             <div class="mist-container absolute inset-0 opacity-40"></div>
             
             <!-- Particles -->
-            <div id="particles-js" class="absolute inset-0 opacity-50 z-10 pointer-events-none"></div>
+            <canvas id="particles-canvas" class="absolute inset-0 z-10 pointer-events-none w-full h-full"></canvas>
         </div>
 
         <div class="container mx-auto px-2 md:px-6 relative z-20 w-full max-w-6xl flex flex-col items-center mt-4">
@@ -223,8 +223,8 @@
 
                 <!-- Bottom Banner -->
                 <div class="w-full max-w-4xl border-y border-brand-gold/40 py-2 md:py-3 bg-brand-dark/60 backdrop-blur-sm">
-                    <p class="text-brand-gold text-[8px] md:text-sm uppercase tracking-[0.3em] font-semibold glow-gold-text">
-                        Jalan Cahaya, Menuntun Jiwa, Menjemput Keberkahan
+                    <p class="text-brand-gold text-[8px] md:text-sm uppercase tracking-[0.2em] md:tracking-[0.3em] font-semibold glow-gold-text">
+                        Jalan Cahaya, Menuntun Jiwa &bull; 100% Aman, Etis & Terpercaya
                     </p>
                 </div>
             </div>
@@ -247,6 +247,143 @@
             <div class="w-[1px] h-12 bg-brand-gold/50 mx-auto"></div>
         </div>
     </section>
+
+
+    <!-- Pelatihan Privat Section -->
+    <section id="pelatihan" class="py-24 bg-brand-dark relative overflow-hidden">
+        <div class="absolute right-0 top-0 w-1/3 h-full bg-brand-gold/5 blur-[120px] pointer-events-none"></div>
+        <div class="container mx-auto px-6 lg:px-12 relative z-10">
+            <div class="text-center mb-16 reveal-up">
+                <h4 class="text-brand-gold uppercase tracking-widest text-sm font-semibold mb-2">Program Khusus</h4>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4 text-white">Gemblengan & Pelatihan Privat</h2>
+                <div class="w-16 h-[1px] bg-brand-gold mx-auto mb-6"></div>
+                <p class="text-gray-400 font-light max-w-2xl mx-auto">Program bimbingan spiritual intensif yang dibimbing langsung oleh Raden Ki Jagat Pamungkas. Dirancang untuk Anda yang ingin mendalami keilmuan Nusantara secara nyata dan terarah.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Program 1 -->
+                <div class="bg-brand-darker border border-gray-800 rounded-sm hover:border-brand-gold transition-all duration-300 group reveal-up shadow-[0_4px_20px_rgba(0,0,0,0.5)] flex flex-col overflow-hidden hover:-translate-y-2">
+                    <div class="h-48 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-brand-dark/40 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
+                        <img src="assets/img/pelatihan-1.png" onerror="this.src='assets/img/hero-bg.png'" alt="Tenaga Dalam" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute bottom-0 left-0 w-full h-2/3 bg-gradient-to-t from-brand-darker to-transparent z-10"></div>
+                        <div class="absolute -bottom-6 right-6 z-20 w-12 h-12 bg-brand-dark rounded-full border border-brand-gold flex items-center justify-center shadow-[0_0_15px_rgba(212,175,55,0.6)] group-hover:animate-pulse">
+                            <i class="fas fa-fire text-xl text-brand-gold"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 md:p-8 flex-grow flex flex-col relative z-20 mt-2">
+                        <h3 class="font-heading text-xl font-bold text-white mb-3 group-hover:text-brand-gold transition-colors">Gemblengan Tenaga Dalam</h3>
+                        <div class="inline-block bg-brand-gold/10 border border-brand-gold/30 px-3 py-1 rounded-sm mb-4 w-fit">
+                            <span class="text-brand-gold font-bold text-sm tracking-widest">MAHAR: Rp 1.500.000</span>
+                        </div>
+                        <p class="text-gray-400 text-sm font-light leading-relaxed mb-6 flex-grow">Membangkitkan energi murni (prana) dalam diri untuk kesehatan raga, bela diri gaib, dan penyaluran energi penyembuhan jarak dekat maupun jauh.</p>
+                        <a href="#" class="modal-trigger text-brand-gold text-sm font-bold uppercase tracking-wider hover:text-white transition-colors w-full text-center py-3 border border-brand-gold hover:bg-brand-gold/20 rounded-sm" data-src="assets/img/pelatihan-1.png" data-title="Gemblengan Tenaga Dalam" data-desc="<div class='space-y-4 text-left'><p class='text-brand-gold font-bold tracking-widest text-sm mb-4 border-b border-brand-gold/30 pb-2'>MAHAR: Rp 1.500.000</p><p class='text-sm leading-relaxed'>Program pelatihan privat yang berfokus pada pembangkitan dan pengelolaan energi prana melalui latihan pernapasan, meditasi, olah rasa, dan teknik konsentrasi. Materi disusun secara bertahap sehingga mudah dipahami oleh pemula maupun peserta yang telah memiliki pengalaman.</p><h5 class='text-brand-gold font-bold mt-4 mb-2 text-sm'>Materi Pelatihan:</h5><ul class='list-disc pl-5 space-y-1 text-sm text-gray-300'><li>Pengenalan dasar tenaga dalam.</li><li>Latihan pernapasan dan pengolahan energi.</li><li>Teknik konsentrasi dan meditasi dasar.</li><li>Latihan penyaluran energi.</li><li>Penguatan mental dan pengendalian emosi.</li><li>Latihan mandiri setelah pelatihan selesai.</li></ul><h5 class='text-brand-gold font-bold mt-4 mb-2 text-sm'>Tata Cara Pelatihan:</h5><ul class='list-disc pl-5 space-y-1 text-sm text-gray-300'><li>Dilaksanakan secara privat (tatap muka atau online sesuai program).</li><li>Diawali dengan konsultasi dan pengenalan materi.</li><li>Proses pembimbingan dilakukan langkah demi langkah.</li><li>Peserta memperoleh panduan latihan mandiri.</li><li>Tersedia sesi tanya jawab dan evaluasi perkembangan.</li></ul><h5 class='text-brand-gold font-bold mt-4 mb-2 text-sm'>Manfaat Pelatihan:</h5><ul class='list-disc pl-5 space-y-1 text-sm text-gray-300'><li>Membantu meningkatkan fokus dan konsentrasi.</li><li>Melatih pengendalian diri dan ketenangan pikiran.</li><li>Membantu menjaga kebugaran melalui latihan pernapasan.</li><li>Menumbuhkan rasa percaya diri.</li><li>Menjadi sarana pengembangan diri secara disiplin.</li></ul></div>" data-type="product">Detail & Daftar</a>
+                    </div>
+                </div>
+
+                <!-- Program 2 -->
+                <div class="bg-brand-darker border border-gray-800 rounded-sm hover:border-brand-gold transition-all duration-300 group reveal-up delay-100 shadow-[0_4px_20px_rgba(0,0,0,0.5)] flex flex-col overflow-hidden hover:-translate-y-2">
+                    <div class="h-48 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-brand-dark/40 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
+                        <img src="assets/img/pelatihan-2.png" onerror="this.src='assets/img/hero-bg.png'" alt="Ilmu Hikmah" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute bottom-0 left-0 w-full h-2/3 bg-gradient-to-t from-brand-darker to-transparent z-10"></div>
+                        <div class="absolute -bottom-6 right-6 z-20 w-12 h-12 bg-brand-dark rounded-full border border-brand-gold flex items-center justify-center shadow-[0_0_15px_rgba(212,175,55,0.6)] group-hover:animate-pulse">
+                            <i class="fas fa-book-open text-xl text-brand-gold"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 md:p-8 flex-grow flex flex-col relative z-20 mt-2">
+                        <h3 class="font-heading text-xl font-bold text-white mb-3 group-hover:text-brand-gold transition-colors">Kajian Ilmu Hikmah</h3>
+                        <div class="inline-block bg-brand-gold/10 border border-brand-gold/30 px-3 py-1 rounded-sm mb-4 w-fit">
+                            <span class="text-brand-gold font-bold text-sm tracking-widest">MAHAR: Rp 2.500.000</span>
+                        </div>
+                        <p class="text-gray-400 text-sm font-light leading-relaxed mb-6 flex-grow">Pembelajaran mendalam mengenai tata cara doa, amalan wirid, dan asmak khusus untuk membuka pintu rezeki, keselamatan, dan hajat besar lainnya.</p>
+                        <a href="#" class="modal-trigger text-brand-gold text-sm font-bold uppercase tracking-wider hover:text-white transition-colors w-full text-center py-3 border border-brand-gold hover:bg-brand-gold/20 rounded-sm" data-src="assets/img/pelatihan-2.png" data-title="Kajian Ilmu Hikmah" data-desc="<div class='space-y-4 text-left'><p class='text-brand-gold font-bold tracking-widest text-sm mb-4 border-b border-brand-gold/30 pb-2'>MAHAR: Rp 2.500.000</p><p class='text-sm leading-relaxed'>Program pembelajaran mengenai doa-doa, wirid, dzikir, dan amalan yang bersumber dari tradisi keilmuan Islam sesuai bimbingan pengajar. Materi diberikan dengan penekanan pada adab, niat yang baik, dan penggunaan yang bertanggung jawab.</p><h5 class='text-brand-gold font-bold mt-4 mb-2 text-sm'>Materi Pelatihan:</h5><ul class='list-disc pl-5 space-y-1 text-sm text-gray-300'><li>Pengantar ilmu hikmah.</li><li>Tata cara wirid dan dzikir.</li><li>Adab mengamalkan doa.</li><li>Latihan rutin sesuai kemampuan peserta.</li><li>Pendampingan praktik.</li></ul><h5 class='text-brand-gold font-bold mt-4 mb-2 text-sm'>Tata Cara Pelatihan:</h5><ul class='list-disc pl-5 space-y-1 text-sm text-gray-300'><li>Konsultasi awal.</li><li>Penyampaian materi secara bertahap.</li><li>Praktik membaca doa dan wirid.</li><li>Evaluasi bacaan dan pemahaman.</li><li>Pendampingan selama masa belajar.</li></ul><h5 class='text-brand-gold font-bold mt-4 mb-2 text-sm'>Manfaat Pelatihan:</h5><ul class='list-disc pl-5 space-y-1 text-sm text-gray-300'><li>Menambah wawasan keagamaan.</li><li>Membiasakan ibadah dan dzikir secara rutin.</li><li>Melatih kedisiplinan spiritual.</li><li>Membantu membangun ketenangan batin.</li><li>Meningkatkan kualitas penghayatan ibadah.</li></ul></div>" data-type="product">Detail & Daftar</a>
+                    </div>
+                </div>
+
+                <!-- Program 3 -->
+                <div class="bg-brand-darker border border-gray-800 rounded-sm hover:border-brand-gold transition-all duration-300 group reveal-up delay-200 shadow-[0_4px_20px_rgba(0,0,0,0.5)] flex flex-col overflow-hidden hover:-translate-y-2">
+                    <div class="h-48 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-brand-dark/40 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
+                        <img src="assets/img/pelatihan-3.png" onerror="this.src='assets/img/hero-bg.png'" alt="Aktivasi Mata Batin" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute bottom-0 left-0 w-full h-2/3 bg-gradient-to-t from-brand-darker to-transparent z-10"></div>
+                        <div class="absolute -bottom-6 right-6 z-20 w-12 h-12 bg-brand-dark rounded-full border border-brand-gold flex items-center justify-center shadow-[0_0_15px_rgba(212,175,55,0.6)] group-hover:animate-pulse">
+                            <i class="fas fa-eye text-xl text-brand-gold"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 md:p-8 flex-grow flex flex-col relative z-20 mt-2">
+                        <h3 class="font-heading text-xl font-bold text-white mb-3 group-hover:text-brand-gold transition-colors">Aktivasi Mata Batin</h3>
+                        <div class="inline-block bg-brand-gold/10 border border-brand-gold/30 px-3 py-1 rounded-sm mb-4 w-fit">
+                            <span class="text-brand-gold font-bold text-sm tracking-widest">MAHAR: Rp 3.000.000</span>
+                        </div>
+                        <p class="text-gray-400 text-sm font-light leading-relaxed mb-6 flex-grow">Bimbingan membuka indera keenam dan kepekaan rasa untuk mendeteksi energi alam, benda bertuah, dan benteng pertahanan dari ilmu gaib negatif.</p>
+                        <a href="#" class="modal-trigger text-brand-gold text-sm font-bold uppercase tracking-wider hover:text-white transition-colors w-full text-center py-3 border border-brand-gold hover:bg-brand-gold/20 rounded-sm" data-src="assets/img/pelatihan-3.png" data-title="Aktivasi Mata Batin" data-desc="<div class='space-y-4 text-left'><p class='text-brand-gold font-bold tracking-widest text-sm mb-4 border-b border-brand-gold/30 pb-2'>MAHAR: Rp 3.000.000</p><p class='text-sm leading-relaxed'>Program olah rasa yang bertujuan melatih kepekaan intuisi, konsentrasi, dan kesadaran diri melalui meditasi, relaksasi, serta latihan pengamatan. Program ini merupakan pelatihan pengembangan diri dan pengalaman setiap peserta dapat berbeda-beda.</p><h5 class='text-brand-gold font-bold mt-4 mb-2 text-sm'>Materi Pelatihan:</h5><ul class='list-disc pl-5 space-y-1 text-sm text-gray-300'><li>Latihan relaksasi.</li><li>Meditasi dasar.</li><li>Olah rasa dan konsentrasi.</li><li>Teknik pengamatan intuitif.</li><li>Latihan mandiri.</li></ul><h5 class='text-brand-gold font-bold mt-4 mb-2 text-sm'>Tata Cara Pelatihan:</h5><ul class='list-disc pl-5 space-y-1 text-sm text-gray-300'><li>Konsultasi awal.</li><li>Latihan relaksasi.</li><li>Praktik meditasi terpandu.</li><li>Pendampingan latihan.</li><li>Evaluasi perkembangan.</li></ul><h5 class='text-brand-gold font-bold mt-4 mb-2 text-sm'>Manfaat Pelatihan:</h5><ul class='list-disc pl-5 space-y-1 text-sm text-gray-300'><li>Melatih fokus dan konsentrasi.</li><li>Membantu mengenali intuisi diri.</li><li>Meningkatkan kesadaran terhadap kondisi diri.</li><li>Membantu relaksasi mental.</li><li>Mengembangkan kemampuan observasi.</li></ul></div>" data-type="product">Detail & Daftar</a>
+                    </div>
+                </div>
+
+                <!-- Program 4 -->
+                <div class="bg-brand-darker border border-gray-800 rounded-sm hover:border-brand-gold transition-all duration-300 group reveal-up shadow-[0_4px_20px_rgba(0,0,0,0.5)] flex flex-col overflow-hidden hover:-translate-y-2">
+                    <div class="h-48 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-brand-dark/40 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
+                        <img src="assets/img/pelatihan-4.png" onerror="this.src='assets/img/hero-bg.png'" alt="Pengobatan Alternatif" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute bottom-0 left-0 w-full h-2/3 bg-gradient-to-t from-brand-darker to-transparent z-10"></div>
+                        <div class="absolute -bottom-6 right-6 z-20 w-12 h-12 bg-brand-dark rounded-full border border-brand-gold flex items-center justify-center shadow-[0_0_15px_rgba(212,175,55,0.6)] group-hover:animate-pulse">
+                            <i class="fas fa-hands-holding-circle text-xl text-brand-gold"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 md:p-8 flex-grow flex flex-col relative z-20 mt-2">
+                        <h3 class="font-heading text-xl font-bold text-white mb-3 group-hover:text-brand-gold transition-colors">Pengobatan Alternatif</h3>
+                        <div class="inline-block bg-brand-gold/10 border border-brand-gold/30 px-3 py-1 rounded-sm mb-4 w-fit">
+                            <span class="text-brand-gold font-bold text-sm tracking-widest">MAHAR: Rp 2.000.000</span>
+                        </div>
+                        <p class="text-gray-400 text-sm font-light leading-relaxed mb-6 flex-grow">Transfer ilmu penyembuhan supranatural, ruqyah tradisi, dan racikan herbal nusantara agar Anda dapat mandiri membantu menyembuhkan sesama.</p>
+                        <a href="#" class="modal-trigger text-brand-gold text-sm font-bold uppercase tracking-wider hover:text-white transition-colors w-full text-center py-3 border border-brand-gold hover:bg-brand-gold/20 rounded-sm" data-src="assets/img/pelatihan-4.png" data-title="Pengobatan Alternatif" data-desc="<div class='space-y-4 text-left'><p class='text-brand-gold font-bold tracking-widest text-sm mb-4 border-b border-brand-gold/30 pb-2'>MAHAR: Rp 2.000.000</p><p class='text-sm leading-relaxed'>Pelatihan dasar mengenai pendekatan pengobatan alternatif berbasis doa, relaksasi, dan praktik spiritual sesuai tradisi yang diajarkan oleh pembimbing. Program ini ditujukan sebagai pembelajaran dan bukan pengganti diagnosis maupun pengobatan medis profesional.</p><h5 class='text-brand-gold font-bold mt-4 mb-2 text-sm'>Materi Pelatihan:</h5><ul class='list-disc pl-5 space-y-1 text-sm text-gray-300'><li>Etika membantu sesama.</li><li>Doa dan bacaan pendamping.</li><li>Teknik relaksasi.</li><li>Pendekatan spiritual tradisional.</li><li>Praktik pendampingan.</li></ul><h5 class='text-brand-gold font-bold mt-4 mb-2 text-sm'>Tata Cara Pelatihan:</h5><ul class='list-disc pl-5 space-y-1 text-sm text-gray-300'><li>Konsultasi awal.</li><li>Penyampaian teori.</li><li>Demonstrasi praktik.</li><li>Latihan bersama pembimbing.</li><li>Evaluasi kemampuan peserta.</li></ul><h5 class='text-brand-gold font-bold mt-4 mb-2 text-sm'>Manfaat Pelatihan:</h5><ul class='list-disc pl-5 space-y-1 text-sm text-gray-300'><li>Menambah wawasan mengenai praktik pengobatan tradisional.</li><li>Melatih empati dan kepedulian.</li><li>Membantu memahami teknik relaksasi.</li><li>Menjadi pelengkap pengetahuan spiritual.</li><li>Mengembangkan kemampuan komunikasi saat mendampingi orang lain.</li></ul><div class='mt-4 p-3 border border-red-500/30 bg-red-500/10 rounded-sm'><p class='text-xs text-red-200'><strong>Catatan Penting:</strong> Pelatihan ini tidak dimaksudkan sebagai pengganti layanan dokter, rumah sakit, maupun terapi medis. Untuk kondisi kesehatan tertentu, peserta tetap dianjurkan berkonsultasi dengan tenaga kesehatan yang berwenang.</p></div></div>" data-type="product">Detail & Daftar</a>
+                    </div>
+                </div>
+
+                <!-- Program 5 -->
+                <div class="bg-brand-darker border border-gray-800 rounded-sm hover:border-brand-gold transition-all duration-300 group reveal-up delay-100 shadow-[0_4px_20px_rgba(0,0,0,0.5)] flex flex-col overflow-hidden hover:-translate-y-2">
+                    <div class="h-48 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-brand-dark/40 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
+                        <img src="assets/img/pelatihan-5.png" onerror="this.src='assets/img/hero-bg.png'" alt="Buka Aura" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute bottom-0 left-0 w-full h-2/3 bg-gradient-to-t from-brand-darker to-transparent z-10"></div>
+                        <div class="absolute -bottom-6 right-6 z-20 w-12 h-12 bg-brand-dark rounded-full border border-brand-gold flex items-center justify-center shadow-[0_0_15px_rgba(212,175,55,0.6)] group-hover:animate-pulse">
+                            <i class="fas fa-spa text-xl text-brand-gold"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 md:p-8 flex-grow flex flex-col relative z-20 mt-2">
+                        <h3 class="font-heading text-xl font-bold text-white mb-3 group-hover:text-brand-gold transition-colors">Buka Aura & Ruwatan</h3>
+                        <div class="inline-block bg-brand-gold/10 border border-brand-gold/30 px-3 py-1 rounded-sm mb-4 w-fit">
+                            <span class="text-brand-gold font-bold text-sm tracking-widest">MAHAR: Rp 1.000.000</span>
+                        </div>
+                        <p class="text-gray-400 text-sm font-light leading-relaxed mb-6 flex-grow">Pembersihan sengkolo (kesialan) secara mendalam untuk memancarkan aura daya tarik, wibawa kepemimpinan, dan pelarisan usaha secara alami.</p>
+                        <a href="#" class="modal-trigger text-brand-gold text-sm font-bold uppercase tracking-wider hover:text-white transition-colors w-full text-center py-3 border border-brand-gold hover:bg-brand-gold/20 rounded-sm" data-src="assets/img/pelatihan-5.png" data-title="Buka Aura & Ruwatan" data-desc="<div class='space-y-4 text-left'><p class='text-brand-gold font-bold tracking-widest text-sm mb-4 border-b border-brand-gold/30 pb-2'>MAHAR: Rp 1.000.000</p><p class='text-sm leading-relaxed'>Program pendampingan spiritual yang berisi doa, refleksi diri, serta pembinaan mental positif untuk membantu peserta membangun kepercayaan diri dan semangat menjalani aktivitas sehari-hari. Program ini tidak menjanjikan hasil tertentu terkait rezeki, usaha, hubungan, atau keberuntungan.</p><h5 class='text-brand-gold font-bold mt-4 mb-2 text-sm'>Materi Pelatihan:</h5><ul class='list-disc pl-5 space-y-1 text-sm text-gray-300'><li>Muhasabah diri.</li><li>Doa dan dzikir.</li><li>Meditasi relaksasi.</li><li>Penguatan mental positif.</li><li>Latihan menjaga konsistensi ibadah.</li></ul><h5 class='text-brand-gold font-bold mt-4 mb-2 text-sm'>Tata Cara Pelatihan:</h5><ul class='list-disc pl-5 space-y-1 text-sm text-gray-300'><li>Konsultasi pribadi.</li><li>Penyampaian materi.</li><li>Praktik doa dan relaksasi.</li><li>Pendampingan latihan.</li><li>Evaluasi perkembangan.</li></ul><h5 class='text-brand-gold font-bold mt-4 mb-2 text-sm'>Manfaat Pelatihan:</h5><ul class='list-disc pl-5 space-y-1 text-sm text-gray-300'><li>Membantu meningkatkan rasa percaya diri.</li><li>Mendorong pola pikir yang lebih positif.</li><li>Membantu mengurangi ketegangan batin.</li><li>Menumbuhkan motivasi dalam beraktivitas.</li><li>Membiasakan refleksi diri secara rutin.</li></ul></div>" data-type="product">Detail & Daftar</a>
+                    </div>
+                </div>
+
+                <!-- Program 6 -->
+                <div class="bg-brand-darker border border-gray-800 rounded-sm hover:border-brand-gold transition-all duration-300 group reveal-up delay-200 shadow-[0_4px_20px_rgba(0,0,0,0.5)] flex flex-col overflow-hidden hover:-translate-y-2">
+                    <div class="h-48 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-brand-dark/40 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
+                        <img src="assets/img/pelatihan-6.png" onerror="this.src='assets/img/hero-bg.png'" alt="Meditasi" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute bottom-0 left-0 w-full h-2/3 bg-gradient-to-t from-brand-darker to-transparent z-10"></div>
+                        <div class="absolute -bottom-6 right-6 z-20 w-12 h-12 bg-brand-dark rounded-full border border-brand-gold flex items-center justify-center shadow-[0_0_15px_rgba(212,175,55,0.6)] group-hover:animate-pulse">
+                            <i class="fas fa-om text-xl text-brand-gold"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 md:p-8 flex-grow flex flex-col relative z-20 mt-2">
+                        <h3 class="font-heading text-xl font-bold text-white mb-3 group-hover:text-brand-gold transition-colors">Meditasi Ketenangan Batin</h3>
+                        <div class="inline-block bg-brand-gold/10 border border-brand-gold/30 px-3 py-1 rounded-sm mb-4 w-fit">
+                            <span class="text-brand-gold font-bold text-sm tracking-widest">MAHAR: Rp 500.000</span>
+                        </div>
+                        <p class="text-gray-400 text-sm font-light leading-relaxed mb-6 flex-grow">Teknik pemusatan energi dan olah rasa untuk meredakan stres, trauma, dan mencapai pencerahan spiritual di tengah bisingnya kehidupan modern.</p>
+                        <a href="#" class="modal-trigger text-brand-gold text-sm font-bold uppercase tracking-wider hover:text-white transition-colors w-full text-center py-3 border border-brand-gold hover:bg-brand-gold/20 rounded-sm" data-src="assets/img/pelatihan-6.png" data-title="Meditasi Ketenangan Batin" data-desc="<div class='space-y-4 text-left'><p class='text-brand-gold font-bold tracking-widest text-sm mb-4 border-b border-brand-gold/30 pb-2'>MAHAR: Rp 500.000</p><p class='text-sm leading-relaxed'>Program meditasi dan olah napas yang dirancang untuk membantu peserta memperoleh relaksasi, meningkatkan kesadaran diri, dan mengelola stres melalui teknik meditasi yang dipandu secara bertahap.</p><h5 class='text-brand-gold font-bold mt-4 mb-2 text-sm'>Materi Pelatihan:</h5><ul class='list-disc pl-5 space-y-1 text-sm text-gray-300'><li>Teknik pernapasan.</li><li>Relaksasi tubuh.</li><li>Meditasi kesadaran.</li><li>Pengendalian pikiran.</li><li>Latihan rutin harian.</li></ul><h5 class='text-brand-gold font-bold mt-4 mb-2 text-sm'>Tata Cara Pelatihan:</h5><ul class='list-disc pl-5 space-y-1 text-sm text-gray-300'><li>Konsultasi kondisi awal peserta.</li><li>Praktik meditasi terpandu.</li><li>Latihan pernapasan.</li><li>Pendampingan selama sesi.</li><li>Panduan latihan mandiri di rumah.</li></ul><h5 class='text-brand-gold font-bold mt-4 mb-2 text-sm'>Manfaat Pelatihan:</h5><ul class='list-disc pl-5 space-y-1 text-sm text-gray-300'><li>Membantu mengurangi stres dan ketegangan.</li><li>Meningkatkan kualitas relaksasi.</li><li>Melatih fokus dan kesadaran diri.</li><li>Membantu mengelola emosi dengan lebih baik.</li><li>Mendukung keseimbangan mental dalam aktivitas sehari-hari.</li></ul><div class='mt-4 p-3 border border-brand-gold/30 bg-brand-gold/5 rounded-sm'><p class='text-xs text-brand-gold'><strong>Catatan:</strong> Hasil latihan dapat berbeda pada setiap peserta dan dipengaruhi oleh konsistensi berlatih. Program ini merupakan pelatihan pengembangan diri dan bukan pengganti penanganan medis maupun psikologis profesional.</p></div></div>" data-type="product">Detail & Daftar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Tentang Kami Section -->
     <section id="tentang" class="py-24 relative overflow-hidden bg-brand-dark">
@@ -279,9 +416,24 @@
                     <p class="text-gray-300 mb-6 leading-relaxed font-light text-lg">
                         Padepokan Kemuning Jati merupakan tempat pelestarian tradisi spiritual Nusantara yang menyediakan pendampingan spiritual, pengobatan tradisional, konsultasi kebatinan, serta berbagai sarana budaya dan spiritual.
                     </p>
-                    <p class="text-gray-400 mb-8 leading-relaxed font-light">
+                    <p class="text-gray-400 mb-6 leading-relaxed font-light">
                         Seluruh layanan dilakukan dengan pendekatan yang menghormati nilai budaya, etika, dan kepercayaan masing-masing individu. Kami menjunjung tinggi profesionalisme tanpa meninggalkan akar kebijaksanaan para leluhur, menciptakan keseimbangan antara raga dan jiwa.
                     </p>
+                    
+                    <ul class="space-y-3 mt-4 mb-8">
+                        <li class="flex items-start text-gray-300 text-sm md:text-base">
+                            <i class="fas fa-shield-alt text-brand-gold mt-1 mr-3 text-lg"></i>
+                            <span class="font-light"><strong>Aman & Bebas Risiko:</strong> Murni menggunakan energi keilahian, ikhtiar doa, dan ramuan herbal nusantara.</span>
+                        </li>
+                        <li class="flex items-start text-gray-300 text-sm md:text-base">
+                            <i class="fas fa-user-secret text-brand-gold mt-1 mr-3 text-lg"></i>
+                            <span class="font-light"><strong>Privasi Terjamin Mutlak:</strong> Kerahasiaan data dan problema klien adalah kehormatan tertinggi yang kami jaga.</span>
+                        </li>
+                        <li class="flex items-start text-gray-300 text-sm md:text-base">
+                            <i class="fas fa-hand-holding-heart text-brand-gold mt-1 mr-3 text-lg"></i>
+                            <span class="font-light"><strong>Logis & Transparan:</strong> Tidak ada syarat menyesatkan, tumbal, atau biaya gaib. Semua proses dipandu secara terbuka dan membumi.</span>
+                        </li>
+                    </ul>
                     
                     <div class="flex items-center space-x-6">
                         <div class="text-center">
@@ -680,6 +832,35 @@
         </div>
     </section>
 
+    <!-- Legalitas & Trust Section -->
+    <section class="py-12 bg-brand-darker relative border-y border-brand-gold/20 overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.5)] z-20">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-10 pointer-events-none"></div>
+        <div class="absolute right-0 top-0 w-64 h-full bg-brand-gold/5 blur-[100px] pointer-events-none"></div>
+        <div class="absolute left-0 top-0 w-64 h-full bg-brand-maroon/10 blur-[100px] pointer-events-none"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 reveal-up">
+                <div class="flex-shrink-0 relative group">
+                    <div class="absolute inset-0 bg-brand-gold blur-lg opacity-20 group-hover:opacity-40 transition-opacity duration-500 rounded-full"></div>
+                    <div class="w-24 h-24 md:w-32 md:h-32 rounded-full border-2 border-brand-gold bg-brand-dark flex items-center justify-center relative z-10 shadow-[0_0_30px_rgba(212,175,55,0.3)]">
+                        <i class="fas fa-stamp text-4xl md:text-5xl text-brand-gold group-hover:scale-110 transition-transform duration-500"></i>
+                    </div>
+                </div>
+                
+                <div class="text-center md:text-left max-w-2xl">
+                    <h4 class="text-brand-gold text-xs md:text-sm uppercase tracking-widest font-bold mb-2">Terdaftar & Diakui Secara Sah</h4>
+                    <h2 class="font-heading text-2xl md:text-3xl font-bold text-white mb-4">Legalitas Resmi KEMENKUMHAM Republik Indonesia</h2>
+                    <div class="inline-block bg-black/50 border border-brand-gold/50 px-4 md:px-6 py-2 md:py-3 rounded-sm mb-4">
+                        <span class="text-white font-heading font-bold text-sm md:text-lg tracking-wider glow-gold-text">SK NOMOR: AHU-0007649.AH.01.04.TAHUN 2024</span>
+                    </div>
+                    <p class="text-gray-400 text-sm font-light leading-relaxed">
+                        Padepokan Kemuning Jati dan Ikatan Spiritual Indonesia (ISI) beroperasi di bawah payung hukum secara legal dan mengedepankan profesionalisme tinggi. <strong>Kami menjamin kerahasiaan identitas pasien</strong>, tidak menggunakan metode yang menyimpang dari norma agama (bebas dari penipuan klenik), dan murni mengabdi untuk memberikan solusi spiritual yang logis, etis, serta terbukti aman.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="bg-[#050505] border-t border-gray-900 pt-20 pb-10 relative">
         <div class="container mx-auto px-6 lg:px-12">
@@ -719,11 +900,11 @@
                     <ul class="space-y-4">
                         <li class="flex items-start">
                             <i class="fas fa-map-marker-alt text-brand-gold mt-1 mr-3"></i>
-                            <span class="text-gray-500 text-sm font-light">Jl. Kembang Kenanga No. 8, <br>Yogyakarta, Indonesia</span>
+                            <span class="text-gray-500 text-sm font-light">Cilacap, <br>Jawa Tengah, Indonesia</span>
                         </li>
                         <li class="flex items-center">
                             <i class="fas fa-phone-alt text-brand-gold mr-3"></i>
-                            <span class="text-gray-500 text-sm font-light">+62 812-3456-7890</span>
+                            <span class="text-gray-500 text-sm font-light">+62 821-4864-1519</span>
                         </li>
                         <li class="flex items-center">
                             <i class="fas fa-envelope text-brand-gold mr-3"></i>
@@ -740,8 +921,8 @@
                 <div>
                     <h4 class="text-white font-heading font-semibold mb-6 uppercase tracking-widest text-sm">Lokasi</h4>
                     <div class="h-32 bg-gray-900 rounded-sm border border-gray-800 overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
-                        <!-- Embed dummy maps iframe -->
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126487.8967060378!2d110.3204781700938!3d-7.797068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5787bd5edfcb%3A0x1879cbc4b6544976!2sYogyakarta%2C%20Kota%20Yogyakarta%2C%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <!-- Embed dummy maps iframe for Cilacap -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126605.31174577883!2d108.93290614138138!3d-7.702755255470764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e650c8c4a4577f1%3A0x3027a76e352bb10!2sCilacap%2C%20Cilacap%20Regency%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
 
