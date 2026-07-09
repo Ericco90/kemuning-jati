@@ -123,6 +123,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (lightboxCta) {
                     if (isProduct) {
                         lightboxCta.style.display = 'inline-flex';
+                        const waMessage = encodeURIComponent(`Halo Admin Padepokan Kemuning Jati, saya tertarik dengan program / produk: ${title}. Mohon informasi lebih lanjut.`);
+                        lightboxCta.href = `https://wa.me/6282148641519?text=${waMessage}`;
                     } else {
                         lightboxCta.style.display = 'none';
                     }
